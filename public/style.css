@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: Arial, sans-serif;
+     padding: 20px;
+     background-color: #8acf84;
+ }
+ 
+ .invoice-container {
+     max-width: 800px;
+     margin: 0 auto;
+     background-color: white;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ header {
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 2px solid;
+     padding-bottom: 10px;
+ }
+ 
+ .company-info h1 {
+     font-size: 24px;
+     color: #050505;
+     
+ }
+
+ .company-info p{
+
+     font-size: 17px;
+     color: black;
+     
+ }
+ 
+ .billing-section {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px 0;
+     border-bottom: 2px solid ;
+ }
+ 
+ .billing-section > div {
+     width: 30%;
+ }
+ 
+ .invoice-details {
+     text-align: right;
+ }
+ 
+ .product-section table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+ }
+ 
+ .product-section th, .product-section td {
+     border: 1px solid #ddd;
+     padding: 8px;
+     text-align: center;
+ }
+ 
+ .product-section th {
+     background-color: #4CAF50;
+     color: white;
+ }
+ 
+ @media (max-width: 768px) {
+     header {
+         flex-direction: column;
+         text-align: center;
+     }
+ 
+     .billing-section {
+         flex-direction: column;
+     }
+ 
+     .billing-section > div {
+         width: 100%;
+         margin-bottom: 20px;
+     }
+ 
+     .invoice-details {
+         text-align: left;
+     }
+ }
+
+ 

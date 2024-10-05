@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="Arial, sans-serif";>
+     <style>
+          * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.invoice-table th, .invoice-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.invoice-table th {
+    background-color: #639cdd;
+    color: white;
+}
+
+td{
+    vertical-align: top;
+}
+
+.invoice-container {
+            border: 1px solid #000;
+            padding: 20px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .header,
+        .footer {
+            text-align: right;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-family: math;
+            font-style: italic;
+           
+        }
+
+        .table-container {
+            width: 104%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            margin-top: -21px;
+        }
+
+        .table-container th, .table-container td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid black;
+            padding-left: 25px;
+        }
+
+        .table-container th {
+            background-color: #f2f2f2;
+        }
+
+        .details-container {
+            width:50%;
+            margin-bottom: 20px;
+            margin-top: 14px;
+        }
+
+        .details-container div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .details-container span {
+            font-weight: bold;
+        }
+
+        .total-container {
+            margin-top: 20px;
+        }
+
+        .total-container div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom:13px;
+        }
+
+        .signatures {
+            display: flex;
+            justify-content: space-between;
+            margin-top:70px;
+            font-size: 17px;
+            font-family:math;
+            font-weight: 600;
+        }
+
+        .signatures div {
+            text-align: center;
+        }
+
+        .total-text {
+            text-align: right;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+     </style>
+
+    
+    <div class="invoice-container" style="width: 70%; margin: 20px auto; border: 2px solid #302d2d;">
+        <header style="text-align: center;">
+          <div class="gst-info">
+               <div class="row">
+                    <div class="col" style="text-align: left;">
+               <p style="font-family: math; font-size: 17px; padding-left: 10px;">GSTIN NO: 33AAZFK2146C1ZD</p>
+           </div>
+           <div class="col" style="text-align: right;">
+               <p  style="font-family: math; font-size: 17px; padding-right: 8px;">Mob No : 97886 11845 | 97504 44600</p>
+           </div>
+          </div>
+           
+             <div class="company-info">
+               <img src="images/logo.avif" alt="" style="width: 17%;">
+                <h1  style=" font-size: 34px; font-weight: bold; font-family: math;";>KANNAN CRACKERS</h1>
+                <p style="  margin: 5px 0;">Fireworks Wholesale & Retail Sales</p>
+                <p style="  margin: 5px 0;">3/1232/20, SRI THIRUPATHI NAGAR, PARAIPATTI, SIVAKASI - 626 189</p>
+                <p>Website : www.kannancrackers.in | E-Mail: kannancrackers2015@gmail.com</p>
+            </div>
+          </div>
+          </header>
+
+        <section class="address-info" style=" display: flex; justify-content: space-between;background-color: #f2f2f2; border: 1px solid #000;">
+            <div class="to-address" style=" width: 30%; padding-left: 20px;">
+               <p><strong>To :</strong></p>
+                <p>M/s. Shashi Reddy</p>
+                <p>4-2-41, Attapur, Hyderabad, Telangana, 500048 (Begun bazar location)</p>
+                <p>PHONEORDER: 9010088916</p>
+            </div>
+             
+         
+            <div class="delivery-address" style=" width: 30%; padding-left: 20px; border-left: 1px solid black;">
+               
+                <p><strong>Delivery To Details:</strong></p>
+                <p>M/s. Shashi Reddy</p>
+                <p>4-2-41, Attapur, Hyderabad, Telangana, 500048 (Begun bazar location)</p>
+                <p>PHONEORDER: 9010088916</p>
+                <p>AADHAR / PAN No: 200145621325</p>
+            </div>
+            <div class="invoice-info" style=" width: 30%;  text-align:center;  border-left: 1px solid black;">
+                <p style=" margin: 5px 0;"><strong>TAX INVOICE</strong></p>
+                <p style="margin-top: 29px;">Bill No.: 406</p>
+                <p>Date: 02-05-2024</p>
+            </div>
+        </section>
+
+        <table class="invoice-table" style=" width: 100%; height: 300px; margin-top: 20px; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>PRODUCT NAME</th>
+                    <th>QUANTITY</th>
+                    <th>RATE</th>
+                    <th>PER</th>
+                    <th>AMOUNT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ASSARTED CRACKERS</td>
+                    <td>1 Box</td>
+                    <td>1,500.00</td>
+                    <td>Box</td>
+                    <td>1,500.00</td>
+                </tr>
+              
+            </tbody>
+        </table>
+        
+        <div class="invoice-container">
+            <div class="row">
+                <div class="col">
+                    <div class="details-container">
+                <div>
+                    <span>Despatch From:</span> <span>SIVAKASI</span>
+                </div>
+                <div>
+                    <span>Despatch To:</span> <span>HYDERABAD</span>
+                </div>
+                <div>
+                    <span>Transport:</span> <span>Van / Lorry</span>
+                </div>
+                <div>
+                    <span>HSN No:</span> <span>3604</span>
+                </div>
+                <div>
+                    <span>Subject to Jurisdiction:</span> <span>Sivakasi</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <table class="table-container">
+                <tr>
+                    <th>Total</th>
+                    <td class="align-right">1,500.00</td>
+                </tr>
+                <tr>
+                    <th>Less: Discount</th>
+                    <td class="align-right">0.00 %</td>
+                </tr>
+                <tr>
+                    <th>Add: P & F Charges</th>
+                    <td class="align-right">0.00 %</td>
+                </tr>
+                <tr>
+                    <th>Value of Goods</th>
+                    <td class="align-right">1,500.00</td>
+                </tr>
+                <tr>
+                    <th>Add: IGST (18%)</th>
+                    <td class="align-right">270.00</td>
+                </tr>
+                <tr>
+                    <th>Round Off</th>
+                    <td class="align-right">0.00</td>
+                </tr>
+                <tr>
+                    <th>Grand Total</th>
+                    <td class="align-right">1,770.00</td>
+                </tr>
+            </table>
+        </div></div>
+
+        <div class="col" style="text-align: center; font-size: 17px; font-family: math; font-weight: 700; margin-top: 24px;">
+            <span>Total:</span> <span>1 Box</span>
+        
+            <div class="total-text" style="text-align: center; margin-top:11px;">
+                <strong>Rupees: One Thousand Seven Hundred Seventy Only.</strong>
+            </div>
+        </div>
+            <div class="footer">
+                <p>For KANNAN CRACKERS</p>
+
+            <div class="signatures">
+                <div>Prepared by</div>
+                <div>Checked by</div>
+                <div style="margin-right: 10px;">Authorized Signatory</div>
+            </div>
+        </div>
+    
+           
+        </div>
+</body>
+</html>
